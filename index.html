@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="result"></h2>
+
+<script>
+let num1 = 20;
+let num2 = 10;
+let operator = "+";
+
+let output = "";
+
+if (operator === "+") {
+    output = "Addition: " + (num1 + num2);
+}
+else if (operator === "-") {
+    output = "Subtraction: " + (num1 - num2);
+}
+else if (operator === "*") {
+    output = "Multiplication: " + (num1 * num2);
+}
+else if (operator === "/") {
+    if (num2 !== 0) {
+        output = "Division: " + (num1 / num2);
+    } else {
+        output = "Error! Division by zero is not allowed.";
+    }
+}
+else {
+    output = "Invalid Operator!";
+}
+
+document.getElementById("result").innerText = output;
+</script>
+
+</body>
+</html>
